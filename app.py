@@ -8,8 +8,8 @@ import datetime
 import pytz
 from timezonefinder import TimezoneFinder
 
-'''Author: prathamesh Dhande
-If you find any error in this code then you can contact me prathameshdhande534@gmail.com'''  
+'''Author: Kotte Sushma 
+If you find any error in this code then you can contact me k.sushma3015@gmail.com'''  
 
 class Weather(Tk):
     def __init__(self):
@@ -45,7 +45,7 @@ class Weather(Tk):
        Label(text="Current Weather :",font='Arial 14 bold',fg="red").place(x=590,y=7)
 
        # location image logo
-       self.img2=Image.open(r'Images/location.png')
+       self.img2=Image.open(r'images/location.png')
        self.resizeimg2=self.img2.resize((20,20))
        self.finalimg2=ImageTk.PhotoImage(self.resizeimg2)
        Label(image=self.finalimg2).place(x=595,y=36)
@@ -59,7 +59,7 @@ class Weather(Tk):
        self.timelbl.place(x=590,y=60)
 
        # creating the label for the logo according to main
-       self.img3=Image.open(r"Icons/main.png")
+       self.img3=Image.open(r"icons/main.png")
        self.resizeimg3=self.img3.resize((200,190))
        self.finalimg3=ImageTk.PhotoImage(self.resizeimg3)
        self.icons=Label(image=self.finalimg3)
